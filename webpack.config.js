@@ -1,7 +1,7 @@
 const path = require('path');
-const isProduction = env === 'production';
 
 module.exports = (env) => {
+    const isProduction = env === 'production';
     console.log('env', env);
     return {
         entry: './src/app.js',
