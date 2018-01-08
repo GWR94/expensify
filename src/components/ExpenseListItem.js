@@ -3,9 +3,6 @@ import { Link } from 'react-router-dom';
 import moment from 'moment';
 import numeral from 'numeral';
 
-// switch between locales
-
-// load a locale
 numeral.register('locale', 'GB', {
   delimiters: {
       thousands: ',',
