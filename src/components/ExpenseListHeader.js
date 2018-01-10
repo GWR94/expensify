@@ -3,6 +3,7 @@ import { connect } from 'react-redux';
 import numeral from 'numeral';
 import selectExpenseTotal from '../selectors/expense-total';
 import selectExpenses from '../selectors/expenses';
+;
 
 export const ExpenseListHeader = ({expenseCount, expenseTotal}) => {
     const expenseWord = expenseCount === 1 ? "expense" : "expenses";
