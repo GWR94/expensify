@@ -67,7 +67,7 @@ test('should edit expenses in firebase', (done) => {
     });
     return database.ref(`expenses/${id}`).once('value');
   }).then((snapshot) => {
-    expect(snapshot.val().amount).toEqual(12000);
+    expect(snapshot.val().amount).toEqual(updates.amount);
     done();
   });
 });
