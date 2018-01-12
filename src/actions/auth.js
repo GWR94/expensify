@@ -1,4 +1,4 @@
-import { firebase, googleAuthProvider } from '../firebase/firebase';
+import { firebase, googleAuthProvider, facebookAuthProvider, githubAuthProvider, twitterAuthProvider } from '../firebase/firebase';
 
 export const login = (uid) => ({
   type: 'LOGIN',
@@ -8,6 +8,24 @@ export const login = (uid) => ({
 export const startLoginGoogle = () => {
   return () => {
     return firebase.auth().signInWithPopup(googleAuthProvider);
+  };
+};
+
+export const startLoginGitHub = () => {
+  return () => {
+    return firebase.auth().signInWithPopup(githubAuthProvider);
+  };
+};
+
+export const startLoginFacebook = () => {
+  return () => {
+    return firebase.auth().signInWithPopup(facebookAuthProvider);
+  };
+};
+
+export const startLoginTwitter = () => {
+  return () => {
+    return firebase.auth().signInWithPopup(twitterAuthProvider);
   };
 };
 

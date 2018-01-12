@@ -20,7 +20,7 @@ const customStyles = {
   }
 };
 
-Modal.setAppElement('#app');
+Modal.setAppElement(document.getElementById('app'));
 export class EditExpensePage extends React.Component {
   constructor() {
     super();

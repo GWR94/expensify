@@ -16,9 +16,40 @@ exports[`should correctly render LoginPage 1`] = `
       It's time to get your expenses under control
     </p>
     <button
-      className="button"
+      className="button__login button__login--google"
     >
+      <i
+        aria-hidden="true"
+        className="fa fa-google"
+      />
       Login With Google
+    </button>
+    <button
+      className="button__login button__login--github"
+    >
+      <i
+        aria-hidden="true"
+        className="fa fa-github"
+      />
+      Login With Github
+    </button>
+    <button
+      className="button__login button__login--facebook"
+    >
+      <i
+        aria-hidden="true"
+        className="fa fa-facebook"
+      />
+      Login With Facebook
+    </button>
+    <button
+      className="button__login button__login--twitter"
+    >
+      <i
+        aria-hidden="true"
+        className="fa fa-twitter"
+      />
+      Login With Twitter
     </button>
   </div>
 </div>

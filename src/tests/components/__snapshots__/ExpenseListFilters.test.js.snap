@@ -43,7 +43,6 @@ exports[`should render ExpenseListFilters correctly 1`] = `
     >
       <DateRangePicker
         anchorDirection="left"
-        className="input-date"
         customArrowIcon={null}
         customCloseIcon={null}
         customInputIcon={null}
@@ -169,7 +168,6 @@ exports[`should render ExpenseListFilters with alt data correctly 1`] = `
     >
       <DateRangePicker
         anchorDirection="left"
-        className="input-date"
         customArrowIcon={null}
         customCloseIcon={null}
         customInputIcon={null}
