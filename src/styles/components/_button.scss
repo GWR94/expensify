@@ -15,7 +15,6 @@
     background: none;
     &:hover {
         text-decoration: underline;
-        text-decoration-color: $dark-blue; 
     }
 }
 
@@ -53,4 +52,23 @@
     justify-content: space-between;
     align-items: center;
     margin: auto;
+}
+
+.button__login {
+    @extend .button;
+    width: 230px;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.button__login--google {
+    background: #ff4242;
+}
+
+.button__login--github {
+    background: #000000;
+}
+
+.fa {
+    float: left;
 }
